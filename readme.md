@@ -1,5 +1,7 @@
-Amy Amkhanitsky ala165
-Daniel Wang dkw50
+Amy Margolina
+Daniel Wang
+
+This program detects and reports spelling errors in text files by comparing words to a dictionary. It recursively traverses directories, utilizing binary search for efficient error identification, and considers punctuation, capitalization, and hyphenation
 
 Design Notes:
 
@@ -13,7 +15,6 @@ Limitations:
 
 The current implementation perfectly address the requirement for exact case matching of proper nouns in the dictionary. 
 Memory usage could be a concern for extremely large dictionaries since the dictionary is loaded into memory in its entirety.
-In addition, for searches that are not case sensitive, we use linear search because of the way dictionary is sorted with capitalizations, so that might increase the run-time.
 Performance optimization was not a primary focus, and for massive datasets or very large directory structures, the program might exhibit latency. 
 
 Testing:
@@ -22,4 +23,3 @@ To test the accuracy of the spell check, we have a test file that includes words
 We also included the Hamlet monologue and added some capitalizations and hyphenations as well.
 To test our error handling messages, we entered commandline arguments with correct and incorrect paths to files.
 We tested our directory transversing function as well by running the code with a directory with other directories and text files.
-
