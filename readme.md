@@ -1,4 +1,4 @@
-# Recursive Directory Scanner & Dictionary-Based Spell Checker
+# Binary-Search Spell Checker With Recursive File Parsing
 ### A C Program for Efficient Binary-Search Spell Checking With Hyphen, Case, and Punctuation Logic
 
 This project implements a high‑performance spell checker in C that recursively scans files and directories, parses words with detailed linguistic rules, and checks each word against a dictionary using **binary search**.   It demonstrates systems‑programming concepts such as directory traversal, low‑level text parsing, memory management, and efficient search algorithms.
@@ -204,3 +204,4 @@ Testing includes:
 Amy Margolina, Daniel Wang
 
 This project demonstrates practical systems‑programming skills in C, including file I/O, directory traversal, efficient search structures, and detailed token parsing.
+
