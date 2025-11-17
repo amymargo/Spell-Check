@@ -91,27 +91,6 @@ void loadDictionary(const char* dictionaryPath) {
     close(fd);
 }
 
-/*int isWordInDictionaryCaseSensitive(const char *word) {
-    int low = 0;
-    int high = dictionarySize - 1;
-
-    while (low <= high) {
-        int mid = low + (high - low) / 2;
-        int cmp = strcmp(dictionary[mid], word);
-        printf("%s ", dictionary[mid]);
-        if (cmp == 0) {
-            return 1; // Word found
-        } else if (cmp < 0) {
-            low = mid + 1;
-        } else {
-            high = mid - 1;
-        }
-        printf("%d %d %d\n", low, mid, high);
-    }
-
-    return 0; // Word not found
-}*/
-
 void removeApostrophes(char* str) {
     char* src = str;
     char* dst = str;
